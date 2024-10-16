@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novelas</title>
+    <link rel="shortcut icon" href="img/libros.png" type="image/icon"/>
+    <style>
+        header{
+            margin: auto; width: 80%;
+        }
+        img{
+            border-radius: 5px;
+        }
+        p{
+            border: 1px solid lightcoral;
+            text-align: center;height: 40px;
+            margin-top: 0%;
+            padding-top: 15px;
+        }
+        table{
+            width: 80%;
+            margin: auto;
+        }
+        td{
+            padding: 10px;
+        }
+        input[type=button] {
+            background-color: bisque;
+            border-radius: 5px;
+            width: 180px;
+            padding: 5px;
+        }
+    </style>
+    <script>
+        function descargar(op){
+            switch(op){
+                case 1:
+                    window.open("pdf/homes.pdf","","left=100,top=100,width=520,height=420");
+                    break;
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img width="100%" src="img/Machu pichu 2.png" alt="">
+        <p>
+            N O V E L A S
+        </p>
+        <section>
+            <table>
+                <tr style="background-color:dodgerblue ;">
+                    <td>Novela</td>
+                    <td>descripción</td>
+                    <td>Descarga</td>
+                    <td>Precio S</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/Novedades/amor.jpg" alt="">
+                    </td>
+                    <td style="width: 70%;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur exercitationem nesciunt doloremque, est ut impedit reprehenderit omnis iste hic saepe, iusto, quasi veritatis placeat incidunt nobis nulla qui. Atque, illum?
+                        <br>
+                        <br>
+                        <input style="width:30px ; margin-bottom:10px; text-align: right;" type="text" name="" id="txtCan" value="1"> <br>
+                        <input type="button" value="Agregar al carrito">
+                    </td>
+                    <td>
+                        <img onclick="descargar(1);"src="img/descargas.png" alt="">
+                    </td>
+                    <td>
+                        S/ 56.00
+                    </td>
+
+                </tr>
+                
+                <tr >
+                    <td>
+                        <img src="img/Novedades/dejamos.jpg" alt="">
+                    </td>
+                    <td style="width: 70%;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur exercitationem nesciunt doloremque, est ut impedit reprehenderit omnis iste hic saepe, iusto, quasi veritatis placeat incidunt nobis nulla qui. Atque, illum?
+                        <br>
+                        <br>
+                        <input style="width:30px ; margin-bottom:10px; text-align: right;" type="text" name="" id="txtCan" value="1"> <br>
+                        <input type="button" value="Agregar al carrito">
+                    </td>
+                    <td>
+                        <a href="pdf/21270-los-tres-mosqueteros-alexandre-dumas.pdf" target="_blank"><img style="margin-top:20px ;" src="img/descargas.png" alt=""></a>
+                    </td>
+                    <td>
+                        S/ 56.00
+                    </td>
+
+                </tr>
+                <tr >
+                    <td>
+                        <img src="img/Novedades/rebeldes.jpg" alt="">
+                    </td>
+                    <td style="width: 70%;">
+                        <iframe src="pdf/homes.pdf" width="100%" frameborder="1"></iframe>
+                        <br>
+                        <br>
+                        <input type="button" value="Agregar al carrito">
+                    </td>
+                    <td>
+                        <a href="pdf/21270-los-tres-mosqueteros-alexandre-dumas.pdf" target="_blank"><img style="margin-top:20px ;" src="img/descargas.png" alt=""></a>
+                    </td>
+                    <td>
+                        S/ 56.00
+                    </td>
+
+                </tr>
+            </table>
+        </section>
+    </header>
+</body>
+</html>
